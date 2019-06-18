@@ -28,7 +28,7 @@ class CompanyHydrator implements CompanyHydratorInterface
      */
     public function hydrate(CompanyTransfer $companyTransfer): CompanyTransfer
     {
-        $priceListId = $companyTransfer->getIdPriceList();
+        $priceListId = $companyTransfer->getfkPriceList();
 
         if ($priceListId === null) {
             return $companyTransfer;

@@ -5,7 +5,7 @@ namespace FondOfSpryker\Zed\CompanyPriceList\Dependency\Facade;
 use FondOfSpryker\Zed\PriceList\Business\PriceListFacadeInterface;
 use Generated\Shared\Transfer\PriceListTransfer;
 
-class CompanyPriceListToPriceListFacadeBridge
+class CompanyPriceListToPriceListFacadeBridge implements CompanyPriceListToPriceListFacadeInterface
 {
     /**
      * @var \FondOfSpryker\Zed\PriceList\Business\PriceListFacadeInterface
