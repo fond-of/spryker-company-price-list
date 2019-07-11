@@ -4,7 +4,7 @@
           namespace="Orm\Zed\Company\Persistence" package="src.Orm.Zed.Company.Persistence">
 
     <table name="spy_company" phpName="SpyCompany">
-        <column name="fk_price_list" type="INTEGER" required="true"/>
+        <column name="fk_price_list" type="INTEGER" required="false"/>
 
         <foreign-key name="spy_company-fk_price_list" foreignTable="fos_price_list" phpName="PriceList">
             <reference local="fk_price_list" foreign="id_price_list"/>
