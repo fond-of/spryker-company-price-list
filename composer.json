@@ -9,7 +9,9 @@
     }
   ],
   "require": {
-    "php": ">=7.1"
+    "php": ">=7.1",
+    "fond-of-spryker/company-extension": "dev-master",
+    "fond-of-spryker/price-list": "dev-master"
   },
   "require-dev": {
     "codeception/codeception": "^2.4",
@@ -28,7 +30,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "FondOfSpryker\\": "tests/FondOfSpryker/"
+      "FondOfSpryker\\": "tests/FondOfSpryker/",
+      "Generated\\": "src/Generated/"
     }
   }
 }
