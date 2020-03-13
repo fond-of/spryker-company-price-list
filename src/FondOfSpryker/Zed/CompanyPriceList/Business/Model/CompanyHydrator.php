@@ -28,14 +28,13 @@ class CompanyHydrator implements CompanyHydratorInterface
      */
     public function hydrate(CompanyTransfer $companyTransfer): CompanyTransfer
     {
-        $priceListId = $companyTransfer->getfkPriceList();
+        $priceListId = $companyTransfer->getFkPriceList();
 
         if ($priceListId === null) {
             return $companyTransfer;
         }
 
-        $priceListTransfer = new PriceListTransfer();
-        $priceListTransfer->setIdPriceList($priceListId);
+        $priceListTransfer = (new PriceListTransfer())->setIdPriceList($priceListId);
 
         $priceListTransfer = $this->priceListFacade->findPriceListById($priceListTransfer);
 
