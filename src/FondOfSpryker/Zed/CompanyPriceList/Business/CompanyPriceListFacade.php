@@ -11,7 +11,7 @@ use Spryker\Zed\Kernel\Business\AbstractFacade;
 class CompanyPriceListFacade extends AbstractFacade implements CompanyPriceListFacadeInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @api
      *
